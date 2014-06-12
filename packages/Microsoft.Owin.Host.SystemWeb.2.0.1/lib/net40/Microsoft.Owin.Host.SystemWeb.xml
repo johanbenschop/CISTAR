@@ -7,7 +7,7 @@
         <member name="T:System.Reflection.AssemblyMetadataAttribute">
             <summary>
             Provided as a down-level stub for the 4.5 AssemblyMetaDataAttribute class.
-            All released assemblies should define [AssemblyMetadata(“Servicing”,”true”)].
+            All released assemblies should define [AssemblyMetadata("Serviceable", "True")].
             </summary>
         </member>
         <member name="T:Owin.Loader.DefaultLoader">
