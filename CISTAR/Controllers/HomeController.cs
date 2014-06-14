@@ -9,6 +9,12 @@ namespace CISTAR.Controllers
     {
         public ActionResult Index()
         {
+            // In case the client is the IGB then return the specific IGB View.
+            if (Request.UserAgent != null && Request.UserAgent.EndsWith("EVE-IGB"))
+            {
+                return View("IndexIGB");
+            }
+
             return View();
         }
     }
