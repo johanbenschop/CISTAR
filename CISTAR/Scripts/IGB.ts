@@ -1,5 +1,8 @@
 ﻿/// <reference path="typings/jquery/jquery.d.ts" />
 /// <reference path="typings/ccpeve/ccpeve.d.ts" />
+/// <reference path="typings/signalr/signalr.d.ts" />
+/// <reference path="typings/signalr/hubs.d.ts" />
+
 
 $(document).ready(() => {
     // Request trust from the IGB.
@@ -8,12 +11,12 @@ $(document).ready(() => {
     CCPEVE.requestTrust(pathname);
 
 
-	var hubProxy = $.connection.contosoChatHub;
-	hubProxy.client.addContosoChatMessageToPage = function (name, message) {
-		console.log(name + ' ' + message);
-	};
+    var hubProxy = $.connection.GameHub;
+    hubProxy.client.addContosoChatMessageToPage = (name, message) => {
+        console.log(name + ' ' + message);
+    };
 
-	$.connection.hub.start().done(function () {
-		
-	});
+    $.connection.hub.start().done(() => {
+        
+    });
 });
