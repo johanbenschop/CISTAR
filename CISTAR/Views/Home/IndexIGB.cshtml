@@ -1,10 +1,12 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "IndexIGB";
 }
 
 <h2>IndexIGB</h2>
 
 @section Scripts{
+    <script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.signalR-2.0.3.min.js")"></script>
+    <script src="@Url.Content("~/signalr/hubs")"></script>
     <script src="@Url.Content("~/Scripts/IGB.js")"></script>
 }
