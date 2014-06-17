@@ -1,9 +1,3 @@
 interface SignalR {
-    GameHub: any;
+    gameHub: any;
 }
-
-interface GameHubProxy {
-    client: Object;
-    server: Object;
-}
-

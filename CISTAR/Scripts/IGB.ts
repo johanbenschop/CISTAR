@@ -11,7 +11,7 @@ $(document).ready(() => {
     CCPEVE.requestTrust(pathname);
 
 
-    var hubProxy = $.connection.GameHub;
+    var hubProxy = $.connection.gameHub;
     hubProxy.client.addContosoChatMessageToPage = (name, message) => {
         console.log(name + ' ' + message);
     };
