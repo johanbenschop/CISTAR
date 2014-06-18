@@ -7,13 +7,8 @@ using Microsoft.AspNet.SignalR;
 
 namespace CISTAR.Hubs
 {
-    public class GameHub : Hub
+    public class GameHub : Hub<IGameHub>
     {
-        public void Hello()
-        {
-            Clients.All.hello();
-        }
-
         public void Ping()
         {
             ChatHub.Broadcast("GameHub", "Ping()");
@@ -21,8 +16,14 @@ namespace CISTAR.Hubs
 
         public override Task OnConnected()
         {
-            ChatHub.Broadcast("GameHub", "OnConnected()");
+            ChatHub.Broadcast("GameHub", string.Format("OnConnected() // "));
             return base.OnConnected();
+        }
+
+        public override Task OnDisconnected(bool stopCalled)
+        {
+            ChatHub.Broadcast("GameHub", string.Format("OnDisconnected(stopCalled {0})", stopCalled));
+            return base.OnDisconnected(stopCalled);
         }
     }
 }

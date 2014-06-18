@@ -1,3 +1,10 @@
+/// <reference path="../ccpeve/ccpeve.d.ts" />
+
 interface SignalR {
-    gameHub: any;
+    gameHub: GameHubProxy;
+}
+
+interface GameHubProxy {
+    client: CCPEVE;
+    server: any;
 }

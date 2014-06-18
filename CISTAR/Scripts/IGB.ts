@@ -3,7 +3,6 @@
 /// <reference path="typings/signalr/signalr.d.ts" />
 /// <reference path="typings/signalr/hubs.d.ts" />
 
-
 $(document).ready(() => {
     // Request trust from the IGB.
     // The IGB will not refresh when trust is given.
@@ -12,11 +11,22 @@ $(document).ready(() => {
 
 
     var hubProxy = $.connection.gameHub;
-    hubProxy.client.addContosoChatMessageToPage = (name, message) => {
-        console.log(name + ' ' + message);
+
+    hubProxy.client.addWaypoint = (solarSystemId) => {
+        CCPEVE.addWaypoint(solarSystemId);
     };
 
     $.connection.hub.start().done(() => {
         
+        // set interval in milliseconds
+        var tid = setInterval(ping, 1000);
+        function ping() {
+            // Simple ping to the server so the headers get pushed out
+            hubProxy.server.ping();
+        }
+        function abortTimer() {
+            clearInterval(tid);
+        }
+
     });
 });
