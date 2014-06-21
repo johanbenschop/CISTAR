@@ -12,6 +12,8 @@ namespace CISTAR.Hubs
         public void Ping()
         {
             ChatHub.Broadcast("GameHub", "Ping()");
+
+
         }
 
         public override Task OnConnected()
