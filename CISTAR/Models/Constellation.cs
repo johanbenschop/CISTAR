@@ -1,12 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Web;
-using System.Web.Services;
-using System.Web.Services.Protocols;
-using System.ComponentModel;
 
 namespace CISTAR.Models
 {
-    public class Constellation
+    public struct Constellation
     {
+        public long Id { get; internal set; }
+        public string Name { get; internal set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

@@ -5,11 +5,14 @@ using System.Web;
 
 namespace CISTAR.Models
 {
-    public class Corporation
+    public struct Corporation
     {
         public int Id { get; internal set; }
         public string Name { get; internal set; }
-        public Alliance Alliance { get; set; }
-        public IList<Pilot> Pilots { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

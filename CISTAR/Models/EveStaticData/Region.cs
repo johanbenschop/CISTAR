@@ -6,7 +6,8 @@ namespace CISTAR.Models.EveStaticData
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class mapRegion
+    [Table("mapRegions")]
+    public partial class Region
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

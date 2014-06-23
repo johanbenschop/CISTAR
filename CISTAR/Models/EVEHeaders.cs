@@ -7,7 +7,7 @@ namespace CISTAR.Models
 {
     public class EVEHeaders
     {
-        public bool? Trusted { get; set; }
+        public bool Trusted { get; set; }
         public string ServerIp { get; set; }
         public string CharName { get; set; }
         public int CharId { get; set; }
@@ -23,9 +23,11 @@ namespace CISTAR.Models
         public string CorpRole { get; set; }
         public int SolarSystemId { get; set; }
         public int WarFactionId { get; set; }
-        public int ShipId { get; set; }
+        public long ShipId { get; set; }
         public string ShipName { get; set; }
         public int ShipTypeId { get; set; }
         public string ShipTypeName { get; set; }
+        public int ConstellationId { get; set; }
+        public int RegionId { get; set; }
     }
 }

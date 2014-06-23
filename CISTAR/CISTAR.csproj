@@ -230,8 +230,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Hubs\ChatHub.cs" />
     <Compile Include="Hubs\IGameHub.cs" />
-    <Compile Include="Middleware\Singleton.cs" />
-    <Compile Include="Models\Constellation.cs" />
+    <Compile Include="Middleware\PilotsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -243,6 +242,7 @@
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Alliance.cs" />
+    <Compile Include="Models\Constellation.cs" />
     <Compile Include="Models\Corporation.cs" />
     <Compile Include="Models\EVEHeaders.cs" />
     <Compile Include="Models\EveStaticData\agtAgent.cs" />
@@ -298,7 +298,7 @@
     <Compile Include="Models\EveStaticData\mapLandmark.cs" />
     <Compile Include="Models\EveStaticData\mapLocationScene.cs" />
     <Compile Include="Models\EveStaticData\mapLocationWormholeClass.cs" />
-    <Compile Include="Models\EveStaticData\mapRegion.cs" />
+    <Compile Include="Models\EveStaticData\Region.cs" />
     <Compile Include="Models\EveStaticData\mapRegionJump.cs" />
     <Compile Include="Models\EveStaticData\mapSolarSystem.cs" />
     <Compile Include="Models\EveStaticData\mapSolarSystemJump.cs" />
@@ -327,13 +327,14 @@
     <Compile Include="Models\EveStaticData\warCombatZoneSystem.cs" />
     <Compile Include="Models\Pilot.cs" />
     <Compile Include="Models\IGBHeaders.cs" />
-    <Compile Include="Models\PilotFactory.cs" />
+    <Compile Include="Models\Region.cs" />
     <Compile Include="Models\Ship.cs" />
+    <Compile Include="Models\SolarSystem.cs" />
+    <Compile Include="Models\Station.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
-    <Compile Include="Models\Region.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
-    <Compile Include="Models\SolarSystem.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
