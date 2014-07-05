@@ -4,8 +4,8 @@
 /// <reference path="typings/signalr/hubs.d.ts" />
 
 $(document).ready(() => {
-    // Request trust from the IGB.
-    // The IGB will not refresh when trust is given.
+    // request trust from the IGB.
+    // the IGB will not refresh when trust is given.
     var pathname = "http://localhost:52288/";
     CCPEVE.requestTrust(pathname);
 
@@ -21,7 +21,7 @@ $(document).ready(() => {
         // set interval in milliseconds
         var tid = setInterval(ping, 1000);
         function ping() {
-            // Simple ping to the server so the headers get pushed out
+            // simple ping to the server so the headers get pushed out
             hubProxy.server.ping();
         }
         function abortTimer() {

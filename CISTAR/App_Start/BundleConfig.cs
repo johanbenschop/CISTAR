@@ -41,7 +41,8 @@ namespace CISTAR
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                  "~/Content/bootstrap.css",
-                 "~/Content/Site.css"));
+                 "~/Content/simple-sidebar.css"
+                 ));
         }
     }
 }
