@@ -65,7 +65,7 @@ namespace CISTAR.Models.EveStaticData
         public virtual DbSet<mapLocationScene> mapLocationScenes { get; set; }
         public virtual DbSet<mapLocationWormholeClass> mapLocationWormholeClasses { get; set; }
         public virtual DbSet<mapRegionJump> mapRegionJumps { get; set; }
-        public virtual DbSet<Region> mapRegions { get; set; }
+        public virtual DbSet<mapRegion> mapRegions { get; set; }
         public virtual DbSet<mapSolarSystemJump> mapSolarSystemJumps { get; set; }
         public virtual DbSet<mapSolarSystem> mapSolarSystems { get; set; }
         public virtual DbSet<mapUniverse> mapUniverses { get; set; }

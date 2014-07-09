@@ -1,66 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="CISTAR.Models.Alliance">
-    <Position X="6" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAgAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Alliance.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Corporations" />
-    </ShowAsCollectionAssociation>
-  </Class>
-  <Class Name="CISTAR.Models.Corporation">
-    <Position X="3.25" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAGAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Corporation.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Alliance" />
-    </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="Pilots" />
-    </ShowAsCollectionAssociation>
-  </Class>
   <Class Name="CISTAR.Models.Pilot">
     <Position X="0.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgAAAAAoAAAgAAQBIAAAAQECCAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAACgAIACIgAMABAAAAEwACAAIAEAAABAABBAAA=</HashCode>
       <FileName>Models\Pilot.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Corporation" />
-      <Property Name="Ship" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="CISTAR.Models.Ship">
-    <Position X="3.25" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAABAgAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Ship.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CISTAR.Models.Constellation">
-    <Position X="4.5" Y="1" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Constellation.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CISTAR.Models.Region">
-    <Position X="6.5" Y="1" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Region.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CISTAR.Models.SolarSystem">
-    <Position X="6.25" Y="5.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\SolarSystem.cs</FileName>
-    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -299,7 +299,7 @@
     <Compile Include="Models\EveStaticData\mapLandmark.cs" />
     <Compile Include="Models\EveStaticData\mapLocationScene.cs" />
     <Compile Include="Models\EveStaticData\mapLocationWormholeClass.cs" />
-    <Compile Include="Models\EveStaticData\Region.cs" />
+    <Compile Include="Models\EveStaticData\mapRegion.cs" />
     <Compile Include="Models\EveStaticData\mapRegionJump.cs" />
     <Compile Include="Models\EveStaticData\mapSolarSystem.cs" />
     <Compile Include="Models\EveStaticData\mapSolarSystemJump.cs" />
